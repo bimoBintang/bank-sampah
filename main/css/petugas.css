@@ -1,0 +1,1187 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,700,100italic,300italic,400italic,700italic);
+
+a {
+    color: #45aed6;
+    -webkit-transition: color 400ms, background-color 400ms;
+    transition: color 400ms, background-color 400ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #272727;
+}
+
+body 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main
+{
+    max-width: 100%;
+    height: auto;
+    background-color: #123c4b;
+}
+
+.sidebar-logo 
+{
+    
+    width: auto;
+    height: 9rem;
+    
+}
+
+.main-sidebar 
+{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-between;
+    
+}
+
+.main-logo
+{
+    width: 6rem;
+    height: auto;
+}
+.trans
+{
+    max-width: 5rem;
+    
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.container_home_petugas
+{
+    font-family: 'Poppins', sans-serif;
+    .container_home_petugas_header
+    {
+        background-color:#123c4b;
+        width: 100%;
+        height:180px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    .container_home_petugas_content
+    {
+        width: 100%;
+    }
+}
+.icon_header
+{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 80%;
+    .icon_header_logo
+    {
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        margin-top: 20px;
+        
+        .icon_header_logo_image
+        {
+            width: 50px;
+            height: 50px;
+            padding: 15px;
+            border-radius:30%;
+        }
+    }
+    .icon_header_notification
+    {
+        width: 80px;
+        height: 80px;
+        
+        .icon_header_notification_icon
+        {
+            margin: 20px 0px 0px 50px;
+        }
+    }
+}
+.greeting_header
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10em;
+    
+    .greeting_header_message
+    {
+        h1{
+            margin-top: -1em;
+            font-size: 25px;
+        }
+        p{
+            margin-top: -1em;
+            font-size: 15px;
+        }
+    }
+    .greeting_header_ilustration
+    {
+        .greeting_header_ilustration_picture
+        {
+        margin-top: -5.5em;
+        width: 175px;
+        height: 175px;
+        }
+    }
+}
+.navbar
+{
+    h1{
+        font-size: 25px;
+        margin: 20px 0px 0px 60px;
+    }
+    .navbar_menu
+    {
+        display: flex;
+        gap: 10em;
+        justify-content: center;
+        
+        .navbar_menu_card
+        {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 10px;
+            
+            .navbar_menu_card_profil{
+                margin: 10px 0px 0px 20px;
+                width: 60px;
+                height: 60px;
+                background-color: #123c4b;
+                border-radius: 10px;
+                
+                .menu_icon
+                {
+                    margin: 10px 0px 0px 0px;
+                }
+            }
+            .navbar_menu_card_jadwal
+            {
+                margin: 10px 0px 0px 20px;
+                width: 60px;
+                height: 60px;
+                background-color: #123c4b;
+                border-radius: 10px;
+                
+                .menu_icon
+                {
+                    margin: 15px 0px 0px 0px;
+                }            
+            }
+            .navbar_menu_card_info
+            {
+                margin: 10px 0px 0px 20px;
+                width: 60px;
+                height: 60px;
+                background-color: #123c4b;
+                border-radius: 10px;
+                
+                .menu_icon
+                {
+                    margin: 15px 0px 0px 0px;
+                }   
+            }
+            p{
+                font-size: 12px;
+                margin-top: 8px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+.article
+{
+    width: 600px;
+    height: 250px;
+    background-color: #123c4b;
+    color: white;
+    margin: 5% 25% 0%;
+    padding: 20px 0px 0px 40px;
+    border-radius: 10px;
+    h1{
+        font-size: 20px;
+    }
+    .article_describe
+    {
+        display: flex;
+        p{
+            font-size: 15px;
+            margin-top: 0em;
+        }
+    }
+    .article_photo
+    {
+        margin: -2em 1em 0em 0em;
+        width: 300px;
+        height: 200px;
+    }
+}
+.informasi
+{
+    width: 650px;
+    background-color: #123c4b;
+    color: white;
+    margin: 5% 25% 5%;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    h1{
+        font-size: 20px;
+        padding: 20px;
+    }
+    ul{
+        background-color: white;
+        display: flex;
+        
+        .circle{
+            color: yellowgreen;
+            font-size: 30px;
+            margin:0px -5px 0px 10px;
+        }
+        .detail{
+            color: #123c4b;
+            list-style: none;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 568px) {
+    .container_home_petugas_header {
+            width: 100%;
+            height: 160px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container_home_petugas_content{
+            width: 100%;
+        }
+    }
+        .icon_header 
+        {
+            height: 5px;
+            display: flex;
+            justify-content: center;
+            gap: 70%;
+            
+            .icon_header_logo
+            {
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                background-color: white;
+                margin-top: 10px;
+                
+                .icon_header_logo_image
+                {
+                    width: 20px;
+                    height: 20px;
+                    padding: 5px;
+                    border-radius:30%;
+                }
+            }
+            .icon_header_notification
+            {
+                width: 20px;
+                height: 20px;
+                
+                .icon_header_notification_icon
+                {
+                    width: 20px;
+                    margin: 0px 0px 0px 0px;
+                }
+            }
+        }
+
+        .greeting_header
+        {
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 0.5em;
+            
+            .greeting_header_message
+            {
+                h1{
+                    margin-top: 6em;
+                    margin-left: 3em;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                p{
+                    margin-top: 0em;
+                    margin-left: 3em;
+                    font-size: 12px;
+                }
+            }
+            .greeting_header_ilustration{
+                &_picture{
+                margin-top: 3.5em;
+                margin-right: 1.5em;
+                width: 80px;
+                height: 80px;
+                }
+            }
+        }
+        .navbar
+        {
+            h1{
+                font-size: 25px;
+                margin: 15px 0px 0px 5px;
+            }
+            .navbar_menu
+            {
+                display: flex;
+                gap: 1em;
+                justify-content: center;
+                
+                .navbar_menu_card
+                {
+                    width: 100px;
+                    height: 100px;
+                    text-align: center;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    border-radius: 10px;
+                    
+                    .navbar_menu_card_profil
+                    {
+                        margin: 10px 0px 0px 15px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #123c4b;
+                        border-radius: 10px;
+                        .menu_icon{
+                            margin: 10px 0px 0px 0px;
+                        }
+                    }
+                    
+                    .navbar_menu_card_jadwal
+                    {
+                        margin: 10px 0px 0px 15px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #123c4b;
+                        border-radius: 10px;
+                        .menu_icon{
+                            margin: 15px 0px 0px 0px;
+                        }            
+                    }
+                    .navbar_menu_card_info
+                    {
+                        margin: 10px 0px 0px 15px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #123c4b;
+                        border-radius: 10px;
+                        .menu_icon{
+                            margin: 15px 0px 0px 0px;
+                        }   
+                    }
+                    p{
+                        font-size: 12px;
+                        margin-top: 8px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .article
+        {
+            width: 275px;
+            height: 250px;
+            background-color: #123c4b;
+            color: white;
+            margin: 5% 2% 0%;
+            padding: 10px 0px 0px 20px;
+            border-radius: 10px;
+            h1{
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .article_describe
+            {
+                display: flex;
+                p{
+                    font-size: 13px;
+                    margin-top: 0em;
+                }
+            }
+
+            .article_photo{
+                margin: -2em 0em 0em 0em;
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .informasi
+        {
+            width: 295px;
+            background-color: #123c4b;
+            color: white;
+            margin: 5% 2% 5%;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            h1{
+                font-size: 20px;
+                padding: 10px 0px 0px 10px;
+                font-weight: 500;
+            }
+            ul
+            {
+                background-color: white;
+                display: flex;
+                
+                .circle{
+                    color: yellowgreen;
+                    font-size: 30px;
+                    margin:0px -5px 0px 10px;
+                }
+                .detail{
+                    color: #123c4b;
+                    list-style: none;
+                    padding-top: 10px;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+
+@media (min-width: 360px) and (max-width: 800px) {
+    .container_home_petugas_header {
+            width: 100%;
+            height: 160px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container_content{
+            width: 100%;
+        }
+    }
+        .icon_header 
+        {
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 70%;
+            
+            .icon_header_logo
+            {
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                background-color: white;
+                margin-top: 10px;
+                
+                .icon_header_logo_image
+                {
+                    width: 20px;
+                    height: 20px;
+                    padding: 5px;
+                    border-radius:30%;
+                }
+            }
+            .icon_header_notification
+            {
+                width: 20px;
+                height: 20px;
+                
+                .icon_header_notification_icon
+                {
+                    width: 20px;
+                    margin: 0px 0px 0px 0px;
+                }
+            }
+        }
+        .greeting_header
+        {
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 0.5em;
+            
+            .greeting_header_message
+            {
+                h1{
+                    margin-top: 6em;
+                    margin-left: 3em;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                p{
+                    margin-top: 0em;
+                    margin-left: 3em;
+                    font-size: 12px;
+                }
+            }
+            .greeting_header_ilustration
+            {
+                .greeting_header_ilustration_picture
+                {
+                    margin-top: 2.5em;
+                    margin-right: 1.5em;
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+        .navbar
+        {
+            h1{
+                font-size: 25px;
+                margin: 15px 0px 0px 20px;
+            }
+            .navbar_menu
+            {
+                display: flex;
+                gap: 1em;
+                justify-content: center;
+                
+                .navbar_menu_card
+                {
+                    width: 100px;
+                    height: 100px;
+                    text-align: center;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    border-radius: 10px;
+                    
+                    .navbar_menu_card_profil
+                    {
+                        margin: 10px 0px 0px 20px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #123c4b;
+                        border-radius: 10px;
+                        .menu_icon{
+                            margin: 10px 0px 0px 0px;
+                        }
+                    }
+                    .navbar_menu_card_jadwal
+                    {
+                        margin: 10px 0px 0px 20px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #123c4b;
+                        border-radius: 10px;
+                        .menu_icon{
+                            margin: 15px 0px 0px 0px;
+                        }            
+                    }
+                    .navbar_menu_card_info
+                    {
+                        margin: 10px 0px 0px 20px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #123c4b;
+                        border-radius: 10px;
+                        
+                        .menu_icon{
+                            margin: 15px 0px 0px 0px;
+                        }   
+                    }
+                    p{
+                        font-size: 12px;
+                        margin-top: 8px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .article
+        {
+            width: 300px;
+            height: 200px;
+            background-color: #123c4b;
+            color: white;
+            margin: 5% 4% 0%;
+            padding: 10px 0px 0px 20px;
+            border-radius: 10px;
+            
+            h1{
+                font-size: 15px;
+                font-weight: 400;
+            }
+            .article_describe
+            {
+                display: flex;
+                p{
+                    font-size: 13px;
+                    margin-top: 0em;
+                }
+            }
+            .article_photo
+            {
+                margin: -2em 0em 0em 0em;
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .informasi
+        {
+            width: 325px;
+            background-color: #123c4b;
+            color: white;
+            margin: 5% 4% 5%;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            h1{
+                font-size: 20px;
+                padding: 10px 0px 0px 10px;
+                font-weight: 500;
+            }
+            ul{
+                background-color: white;
+                display: flex;
+                .circle{
+                    color: yellowgreen;
+                    font-size: 30px;
+                    margin:0px -5px 0px 10px;
+                }
+                .detail{
+                    color: #123c4b;
+                    list-style: none;
+                    padding-top: 10px;
+                    font-weight: bold;
+                }
+            }
+            
+        }
+
+@media (min-width: 390px) and (max-width: 844px) {
+        .container {
+            &_home_petugas_header {
+                width: 100%;
+                height: 160px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            &_content{
+                width: 100%;
+            }
+        }
+            .icon_header {
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                gap: 70%;
+                &_logo{
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    background-color: white;
+                    margin-top: 10px;
+                    &_image{
+                        width: 20px;
+                        height: 20px;
+                        padding: 5px;
+                        border-radius:30%;
+                    }
+                }
+                &_notification{
+                    width: 20px;
+                    height: 20px;
+                    &_icon{
+                        width: 20px;
+                        margin: 0px 0px 0px 0px;
+                    }
+                }
+            }
+            .greeting_header{
+                color: white;
+                display: flex;
+                justify-content: center;
+                gap: 0.5em;
+                &_message{
+                    h1{
+                        margin-top: 6em;
+                        margin-left: 3em;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                    p{
+                        margin-top: 0em;
+                        margin-left: 3em;
+                        font-size: 12px;
+                    }
+                }
+                &_ilustration{
+                    &_picture{
+                    margin-top: 2.5em;
+                    margin-right: 1.5em;
+                    width: 100px;
+                    height: 100px;
+                    }
+                }
+            }
+            .navbar{
+                h1{
+                    font-size: 25px;
+                    margin: 15px 0px 0px 20px;
+                }
+                &_menu{
+                    display: flex;
+                    gap: 1em;
+                    justify-content: center;
+                    &_card{
+                        width: 100px;
+                        height: 100px;
+                        text-align: center;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        border-radius: 10px;
+                        &_profil{
+                            margin: 10px 0px 0px 20px;
+                            width: 60px;
+                            height: 60px;
+                            background-color: #123c4b;
+                            border-radius: 10px;
+                            .menu_icon{
+                                margin: 10px 0px 0px 0px;
+                            }
+                        }
+                        &_jadwal{
+                            margin: 10px 0px 0px 20px;
+                            width: 60px;
+                            height: 60px;
+                            background-color: #123c4b;
+                            border-radius: 10px;
+                            .menu_icon{
+                                margin: 15px 0px 0px 0px;
+                            }            
+                        }
+                        &_info{
+                            margin: 10px 0px 0px 20px;
+                            width: 60px;
+                            height: 60px;
+                            background-color: #123c4b;
+                            border-radius: 10px;
+                            .menu_icon{
+                                margin: 15px 0px 0px 0px;
+                            }   
+                        }
+                        p{
+                            font-size: 12px;
+                            margin-top: 8px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .article{
+                width: 325px;
+                height: 200px;
+                background-color: #123c4b;
+                color: white;
+                margin: 5% 4% 0%;
+                padding: 10px 0px 0px 20px;
+                border-radius: 10px;
+                h1{
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+                &_describe{
+                    display: flex;
+                    p{
+                        font-size: 13px;
+                        margin-top: 0em;
+                    }
+                }
+                &_photo{
+                    margin: -2em 0em 0em 2em;
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+            .informasi{
+                width: 350px;
+                background-color: #123c4b;
+                color: white;
+                margin: 5% 4% 5%;
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                h1{
+                    font-size: 20px;
+                    padding: 10px 0px 0px 10px;
+                    font-weight: 500;
+                }
+                ul{
+                    background-color: white;
+                    display: flex;
+                    .circle{
+                        color: yellowgreen;
+                        font-size: 30px;
+                        margin:0px -5px 0px 10px;
+                    }
+                    .detail{
+                        color: #123c4b;
+                        list-style: none;
+                        padding-top: 10px;
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+    }
+@media (min-width: 412px) and (max-width: 915px) {
+    .container_home_petugas_header {
+            width: 100%;
+            height: 160px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        &_content{
+            width: 100%;
+        }
+    }
+    .icon_header {
+            height: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 70%;
+            &_logo{
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                background-color: white;
+                margin-top: 10px;
+                &_image{
+                    width: 20px;
+                    height: 20px;
+                    padding: 5px;
+                    border-radius:30%;
+                }
+            }
+            &_notification{
+                width: 20px;
+                height: 20px;
+                &_icon{
+                    width: 20px;
+                    margin: 0px 0px 0px 0px;
+                }
+            }
+    }
+    .greeting_header{
+            color: white;
+            display: flex;
+            justify-content: center;
+            gap: 0.5em;
+            &_message{
+                h1{
+                    margin-top: 6em;
+                    margin-left: 3em;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+                p{
+                    margin-top: 0em;
+                    margin-left: 3em;
+                    font-size: 12px;
+                }
+            }
+            &_ilustration{
+                &_picture{
+                margin-top: 2.5em;
+                margin-right: 1.5em;
+                width: 100px;
+                height: 100px;
+                }
+            }
+    }
+    .navbar{
+            h1{
+                font-size: 25px;
+                margin: 15px 0px 0px 20px;
+            }
+            &_menu{
+                display: flex;
+                gap: 1em;
+                justify-content: center;
+                &_card{
+                    width: 100px;
+                    height: 100px;
+                    text-align: center;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    border-radius: 10px;
+                    &_profil{
+                        margin: 10px 0px 0px 20px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #123c4b;
+                        border-radius: 10px;
+                        .menu_icon{
+                            margin: 10px 0px 0px 0px;
+                        }
+                    }
+                    &_jadwal{
+                        margin: 10px 0px 0px 20px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #123c4b;
+                        border-radius: 10px;
+                        .menu_icon{
+                            margin: 15px 0px 0px 0px;
+                        }            
+                    }
+                    &_info{
+                        margin: 10px 0px 0px 20px;
+                        width: 60px;
+                        height: 60px;
+                        background-color: #123c4b;
+                        border-radius: 10px;
+                        .menu_icon{
+                            margin: 15px 0px 0px 0px;
+                        }   
+                    }
+                    p{
+                        font-size: 12px;
+                        margin-top: 8px;
+                        font-weight: 600;
+                    }
+                }
+            }
+     }
+    .article{
+            width: 350px;
+            height: 200px;
+            background-color: #123c4b;
+            color: white;
+            margin: 5% 2% 0%;
+            padding: 10px 10px 0px 20px;
+            border-radius: 10px;
+            h1{
+                font-size: 18px;
+                font-weight: 400;
+            }
+            &_describe{
+                display: flex;
+                p{
+                    font-size: 15px;
+                    margin-top: 0em;
+                }
+            }
+            &_photo{
+                margin: -2em 0em 0em 0em;
+                width: 150px;
+                height: 150px;
+            }
+    }
+    .informasi{
+            width: 380px;
+            background-color: #123c4b;
+            color: white;
+            margin: 5% 2% 4%;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            h1{
+                font-size: 20px;
+                padding: 10px 0px 0px 10px;
+                font-weight: 500;
+            }
+            ul{
+                background-color: white;
+                display: flex;
+                .circle{
+                    color: yellowgreen;
+                    font-size: 30px;
+                    margin:0px -5px 0px 10px;
+                }
+                .detail{
+                    color: #123c4b;
+                    list-style: none;
+                    padding-top: 10px;
+                    font-weight: bold;
+                }
+            }
+            
+    }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+        .container {
+            &_home_petugas_header {
+                width: 100%;
+                height: 120px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            &_content{
+                width: 100%;
+            }
+        }
+            .icon_header {
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                gap: 85%;
+                &_logo{
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    background-color: white;
+                    margin-top: 10px;
+                    &_image{
+                        width: 30px;
+                        height: 30px;
+                        padding: 5px;
+                        border-radius:30%;
+                    }
+                }
+                &_notification{
+                    width: 30px;
+                    height: 30px;
+                    &_icon{
+                        width: 20px;
+                        margin: 0px 0px 0px 0px;
+                    }
+                }
+            }
+            .greeting_header{
+                color: white;
+                display: flex;
+                justify-content: center;
+                gap: 3em;
+                &_message{
+                    h1{
+                        margin-top: 1em;
+                        margin-left: -6em;
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                    p{
+                        margin-top: 0em;
+                        margin-left: -7em;
+                        font-size: 16px;
+                    }
+                }
+                &_ilustration{
+                    &_picture{
+                    margin-top: -1em;
+                    margin-right: -7em;
+                    width: 120px;
+                    height: 120px;
+                    }
+                }
+            }
+            .navbar{
+                h1{
+                    font-size: 25px;
+                    margin: 20px 0px 20px 20px;
+                }
+                &_menu{
+                    display: flex;
+                    gap: 5em;
+                    justify-content: center;
+                    &_card{
+                        width: 150px;
+                        height: 150px;
+                        text-align: center;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        border-radius: 10px;
+                        &_profil{
+                            margin: 10px 0px 0px 20px;
+                            width: 100px;
+                            height: 100px;
+                            background-color: #123c4b;
+                            border-radius: 10px;
+                            .menu_icon{
+                                margin: 25px 0px 0px 0px;
+                            }
+                        }
+                        &_jadwal{
+                            margin: 10px 0px 0px 20px;
+                            width: 100px;
+                            height: 100px;
+                            background-color: #123c4b;
+                            border-radius: 10px;
+                            .menu_icon{
+                                margin: 30px 0px 0px 0px;
+                            }            
+                        }
+                        &_info{
+                            margin: 10px 0px 0px 20px;
+                            width: 100px;
+                            height: 100px;
+                            background-color: #123c4b;
+                            border-radius: 10px;
+                            .menu_icon{
+                                margin:35px 0px 0px 0px;
+                            }   
+                        }
+                        p{
+                            font-size: 12px;
+                            margin-top: 8px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            .article{
+                width: 675px;
+                height: 250px;
+                background-color: #123c4b;
+                color: white;
+                margin: 5% 4% 0%;
+                padding: 10px 0px 0px 20px;
+                border-radius: 10px;
+                h1{
+                    font-size: 25px;
+                    font-weight:500;
+                }
+                &_describe{
+                    display: flex;
+                    p{
+                        font-size: 20px;
+                        margin-top: 0em;
+                    }
+                }
+                &_photo{
+                    margin: -3em 3em 0em 8em;
+                    width: 180px;
+                    height: 180px;
+                }
+            }
+            .informasi{
+                width: 700px;
+                background-color: #123c4b;
+                color: white;
+                margin: 5% 4% 5%;
+                border-radius: 10px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                h1{
+                    font-size: 20px;
+                    padding: 10px 0px 0px 10px;
+                    font-weight: 500;
+                }
+                ul{
+                    background-color: white;
+                    display: flex;
+                    .circle{
+                        color: yellowgreen;
+                        font-size: 30px;
+                        margin:0px -5px 0px 10px;
+                    }
+                    .detail{
+                        color: #123c4b;
+                        list-style: none;
+                        padding-top: 10px;
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+    }
+    

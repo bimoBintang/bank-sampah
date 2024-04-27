@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.container{
+    font-family: 'Poppins',sans-serif;
+    width: 100%;
+    overflow: hidden;
+}
+.header{
+    height: 40px;
+    width: 100%;
+    background-color: #123c4b;
+}
+.content{
+    display: flex;
+}
+.navbar{
+    width: 200px;
+    // height: 100vh;
+    background-color: #123c4b;
+}
+.aside{
+    width: 100%;
+    height: 100%;
+    // background-color: blue;
+}
+.group_card{
+    margin: 15px;
+    display: flex;
+    gap: 15px;
+    color: white;
+    &_greeting{
+        width: 692px;
+        height: 150px;
+        border-radius: 5px;
+        background-color: #123c4b;
+        display: flex;
+        &_text{
+            width: 600px;
+            height: 130px;
+          h2{
+            margin:30px 0px 0px 30px;
+            font-size: 25px;
+          }
+          p{
+            margin : 0px 0px 0px 30px;
+            font-size: 15px;
+          }
+        }
+        &_content{
+            margin: 20px 20px 20px 40px;
+            width: 300px;
+            height: 100px;
+        }
+    }
+    &_configuration{
+        width: 450px;
+        height: 150px;
+        background-color: #123c4b;
+        border-radius: 5px;
+        h3{
+            margin: 20px 20px 0px 20px;
+            font-size: 18px;
+        }
+        p{
+            margin : 5px 10px 0px 20px;
+            font-size: 11px;
+        }
+        &_change{
+            background-color: white;
+            color: black;
+            margin: 10px 0px 0px 20px ;
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    }
+}
+
+.group_box{
+    margin: 15px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    height: 400px;
+    color: white;
+    border-radius: 5px;
+    &_total{
+        text-align: center;
+        grid-template-columns: 1/2;
+        border-radius: 3px;
+        text-decoration: none;
+        background-color: #123c4b;
+        h2{
+            font-size: 15px;
+            color: white;
+        }
+        p{
+            color: white;
+            margin-top: -10px;
+            font-size: 12px;
+        }
+        &:first-child{
+            background-color: rgb(238, 160, 16);
+        }
+        &:nth-child(2){
+            background-color: rgb(54, 54, 158);
+        }
+        &:nth-child(3){
+            background-color: rgb(54, 161, 54);
+        }
+        &:last-child{
+            background-color: rgb(177, 63, 63);
+        }
+    }
+    &_image{
+        position: relative;
+        top: 40px;
+        left: 0px;
+        margin-top: 20px;
+        width: 200px;
+        height: 90px;
+        object-fit: cover;
+    }
+    h2{
+        font-size: 25px;
+        margin: -2em 0em 0.5em;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.admin_container 
+{
+    width: 100%;
+    display: flex;
+}
+.sidebar
+{
+    font-family: 'Poppins',sans-serif;
+    display: grid;
+    width: 13vw;
+    height: 100vh;
+    background-color: #123c4b;
+    gap: 8px;
+    
+    .sidebar_menu 
+    {
+        width: 13vw;
+        height: 80vh;
+        display: grid;
+        gap: 3px;
+        margin-left: 20px;
+    }
+
+    .sidebar_list 
+    {
+        height: 3em;
+    }
+    .sidebar_icon
+    {
+        color: lightgrey;
+        
+        .sidebar_icon:hover{
+            color: white;
+        }
+    }
+    .sidebar_title
+    {
+        position: relative;
+        bottom: 6px;
+        display: flex;
+        width: 10em;
+        height: 55px;
+        align-items: center;
+        color: lightgrey;
+        padding: 25px 10px 10px;
+        font-size: 13px;
+        font-weight: 600;
+
+    }
+
+    .sidebar_Link 
+    {
+        content: "";
+        width: 9em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+        text-decoration: none;
+        height: 3em;
+     
+        
+        .sidebar_Link:hover 
+        {
+            background-color: white;
+            transition: 0.5s ease-in-out;
+            border-radius: 15px;
+        }
+    }
+
+    .sidebar_menu_list 
+    {
+        display: flex;
+        width: 13vw;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .sidebar_button_logout
+    {
+        position: relative;
+        top:10em;
+        width: 9em;
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgb(233, 79, 79);
+       
+    }
+}
+
+.logo_admin
+{
+    width: 8rem;
+    position: relative;
+    top: 10rem;
+}

@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+
+
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+.admin_container 
+{
+    width: 100%;
+    display: flex;
+}
+.sidebar
+{
+    font-family: 'Poppins',sans-serif;
+    display: grid;
+    width: 13vw;
+    height: 100vh;
+    background-color: #123c4b;
+    gap: 8px;
+    
+    .sidebar_menu 
+    {
+        width: 13vw;
+        height: 80vh;
+        display: grid;
+        gap: 3px;
+        margin-left: 20px;
+    }
+
+    .sidebar_list 
+    {
+        height: 3em;
+    }
+    .sidebar_icon
+    {
+        color: lightgrey;
+        
+        .sidebar_icon:hover{
+            color: white;
+        }
+    }
+    .sidebar_title
+    {
+        position: relative;
+        bottom: 6px;
+        display: flex;
+        width: 10em;
+        height: 55px;
+        align-items: center;
+        color: lightgrey;
+        padding: 25px 10px 10px;
+        font-size: 13px;
+        font-weight: 600;
+
+    }
+
+    .sidebar_Link 
+    {
+        content: "";
+        width: 9em;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+        text-decoration: none;
+        height: 3em;
+     
+        
+        .sidebar_Link:hover 
+        {
+            background-color: white;
+            transition: 0.5s ease-in-out;
+            border-radius: 15px;
+        }
+    }
+
+    .sidebar_menu_list 
+    {
+        display: flex;
+        width: 13vw;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .sidebar_button_logout
+    {
+        position: relative;
+        top:10em;
+        width: 9em;
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgb(233, 79, 79);
+       
+    }
+}
+
+.logo_admin
+{
+    width: 8rem;
+    position: relative;
+    top: 10rem;
+}

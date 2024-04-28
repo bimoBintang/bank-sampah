@@ -32,7 +32,7 @@
     }
     .navbar>.container .navbar-brand img,
     .navbar>.container-fluid .navbar-brand img {
-        max-height: 100%
+        max-height: 100%;
     }
     #portfolio .portfolio-item{
         width: 50%;

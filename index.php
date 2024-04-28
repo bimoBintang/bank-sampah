@@ -11,8 +11,8 @@ $level = "pemohon";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="demo1/img/bekasi.png">
-    <title>Pelayanan Surat Keterangan Online Kelurahan Jaticempaka</title>
+    <link rel="icon" href="main/img/iconLogo.png">
+    <title>Aplikasi E-Sabililah</title>
     <!-- core CSS -->
     <link href="main/css/bootstrap.min.css" rel="stylesheet">
     <link href="main/css/font-awesome.min.css" rel="stylesheet">
@@ -46,8 +46,9 @@ $level = "pemohon";
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.php"><img class="navbar-icon" src="main/img/iconLogo.png"
-                            alt="logo"></a>
+                    <a class="navbar-brand" href="index.php">
+                        <img class="navbar-icon" src="main/img/iconLogo.png"
+                        alt="logo"></a>
                 </div>
 
                 <div class="collapse navbar-collapse navbar-right">
@@ -69,16 +70,14 @@ $level = "pemohon";
     <section id="cta2">
         <div class="container">
             <div class="text-center">
-                <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>PELAYANAN</span> SURAT
-                    KETERANGAN <br> KELURAHAN JATICEMPAKA</h2>
-                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">KLIK LOGIN UNTUK REQUEST
-                    PEMBUATAN SURAT KETERANGAN
+                <h2 class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms"><span>APLIKASI</span> E-SABILILAH RW 11
+                <br> KELURAHAN JATICEMPAKA</h2>
+                <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">KLIK LOGIN UNTUK PENUKARAN SAMPAH ANDA
                 <div class="row justify-content-center">
                     <div class="col-lg-12 text-center">
                         <div class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"">
                            <!-- Button trigger modal -->
                            <a href=" login.php" type="submit" class="btn btn-primary">Login</a>
-                            <a href="register.php" type="submit" class="btn btn-primary">Daftar</a>
                         </div>
                     </div>
                 </div>

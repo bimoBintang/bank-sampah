@@ -6,6 +6,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="main/img/iconLogo.png">
     <title>Halaman Login Pemohon</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="main/vendors/mdi/css/materialdesignicons.min.css">
@@ -28,14 +29,14 @@
                     <div class="col-lg-4 mx-auto">
                         <div class="auth-form-light text-left py-5 px-4 px-sm-5">
                             <div class="brand-logo">
-                                <img src="main/img/logoblack.png" width="150" height="54" alt="logo">
+                                <img src="main/img/iconLogo.png" width="150"  alt="logo">
                             </div>
-                            <h4>LOGIN PEMOHON</h4>
+                            <h4>LOGIN WARGA</h4>
                             <h6 class="font-weight-light"></h6>
                             <form method="POST" class="pt-3">
                                 <div class="form-group">
                                     <input type="text" name="username" id="username" class="form-control form-control-xs text-bold"
-                                        placeholder="NIK Anda.."
+                                        placeholder="Username Anda.."
                                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                                         maxlength="16" required autofocus>
                                 </div>
@@ -58,7 +59,7 @@
                                         href="http://localhost/surat-keterangan-desa/">BATAL</a>
                                 </div>
                                 <div class="text-center mt-4 font-weight-light">
-                                    Belum memiliki akun? <a href="register.php" class="text-primary">Buat</a>
+                                     <a href="register.php" class="text-primary">Lupa password anda?</a>
                                 </div>
                             </form>
                         </div>

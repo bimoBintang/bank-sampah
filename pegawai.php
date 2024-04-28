@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Halaman Login Pegawai</title>
+  <link rel="icon" href="main/img/iconLogo.png">
   <!-- plugins:css -->
   <link rel="stylesheet" href="main/vendors/mdi/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="main/vendors/base/vendor.bundle.base.css">
@@ -35,7 +36,7 @@
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
               <div class="brand-logo">
-                <img src="main/img/logoblue.png" width="150" height="54" alt="logo">
+                <img src="main/img/iconLogo.png" width="150" alt="logo">
               </div>
               <h4>LOGIN PEGAWAI</h4>
               <form method="POST" class="pt-3">

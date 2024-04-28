@@ -55,7 +55,7 @@
                                     <p>Selamat Datang Kembali ! Saatnya melangkah ke dalam keseharian dengan semangat yang membara</p>
                                 </div>
                                 <div class="group_card_greeting_ilustration">
-                                    <Image class="group_card_greeting_content" src=Ilustration alt='ilustrasi'/>
+                                    <Img class="group_card_greeting_content" src="../../main/img/ilustration_dashboard_admin.svg" alt='ilustrasi'/>
                                 </div>
                             </div>
                             <div class="group_card_configuration">

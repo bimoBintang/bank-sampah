@@ -34,13 +34,13 @@
                             <h6 class="font-weight-light"></h6>
                             <form method="POST" class="pt-3">
                                 <div class="form-group">
-                                    <input type="text" name="nik" class="form-control form-control-xs text-bold"
+                                    <input type="text" name="username" id="username" class="form-control form-control-xs text-bold"
                                         placeholder="NIK Anda.."
                                         oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
                                         maxlength="16" required autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" name="password" class="form-control form-control-xs"
+                                    <input type="password" name="password" id="password" class="form-control form-control-xs"
                                         placeholder="Password Anda.." required autofocus>
                                 </div>
                                 <div class="mt-3">
@@ -74,20 +74,29 @@
     <!-- login -->
     <?php
     if (isset($_POST['login'])) {
-        $nik = $_POST['nik'];
+        $username = $_POST['username'];
         $password = $_POST['password'];
     
-        $sql_login = "SELECT * FROM data_user WHERE nik='$nik' AND password='$password'";
+        $sql_login = "SELECT * FROM data_user WHERE username='$username' AND password='$password'";
         $query_login = mysqli_query($konek, $sql_login);
         $data_login = mysqli_fetch_array($query_login, MYSQLI_BOTH);
         $jumlah_login = mysqli_num_rows($query_login);
     
         if ($jumlah_login > 0) {
+            $getData = mysqli_fetch_array($query_login);
             session_start();
-            $_SESSION['hak_akses'] = $data_login['hak_akses'];
+            $_SESSION['role'] = $data_login['role'];
             $_SESSION['nama'] = $data_login['nama'];
             $_SESSION['password'] = $data_login['password'];
-            $_SESSION['nik'] = $data_login['nik'];
+            $_SESSION['username'] = $data_login['username'];
+
+            if($role == 'admin' && $role == 'petugas') {
+                $_SESSION['role'] = 'admin';
+                $_SESSION['role'] = 'petuags';
+                header('location:admin', 'location:petugas');
+            } else {
+                header('location:index.php');
+            }
     
             echo "<script language='javascript'>swal('Selamat...', 'Login Berhasil!', 'success');</script>";
             echo '<meta http-equiv="refresh" content="3; url=demo1/main.php">';

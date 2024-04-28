@@ -96,15 +96,16 @@
     <!-- insert register -->
     <?php
     if (isset($_POST['register'])) {
-        $nik = $_POST['nik'];
+        $username = $_POST['username'];
         $password = $_POST['password'];
-        $hak_akses = "Pemohon";
+        $role = "User";
         $nama = $_POST['nama'];
-        $jekel = $_POST['jekel'];
-        $kota = $_POST['kota'];
-        $tgl = $_POST['tgl'];
+        $email = $_POST['email'];
+        $alamat = $_POST['alamat'];
+        $phone = $_POST['phone'];
+        $rt    = $_POST['rt'];
     
-        $sql_simpan = "INSERT INTO data_user (nik,password,hak_akses,nama,tanggal_lahir,jekel,tempat_lahir) VALUES ('$nik','$password','$hak_akses','$nama','$tgl','$jekel','$kota')";
+        $sql_simpan = "INSERT INTO data_user (username,password,role,nama,email,alamat,phone,rt) VALUES ('$username','$password','$role','$nama','$email','$alamat','$rt')";
         $query_simpan = mysqli_query($konek, $sql_simpan);
     
         if ($query_simpan) {

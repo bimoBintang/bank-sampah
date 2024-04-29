@@ -1,60 +1,57 @@
-<?php ?>
-
 <head>
     <link rel="stylesheet" href="../../demo1/css/login.css">
+    <link rel="shortcut icon" href="../../main/img/LOGO.jpg" type="image/x-icon">
+    <title>Halaman Login</title>
 </head>
-
 <main class="container">
-            <div class="container_page_login">
-                <div class="container_login">
-                <div class="header">
-                    <h1 class="header_title>"Login</h1>
-                    <p class="header_describe">Login untuk mengakses akun Anda</p>
+            <div class="authform">
+            <div class="brand">
+                    <img class="brand-logo" src="../../main/img/LOGO.jpg" alt='logo'/>
                 </div>
-                 <p class="container_erorr"></p>
+                <div class="main-form">
+                <div class="title-form">
+                    <h2>Login</h2>
+                </div>
                 <div>
-                    <form class="form_login">
-                    <div class="container_input">
-                            <label class="container_caption" htmlFor="username">username</label>
+                    <form method="POST">
+                    <div class="form-group">
                             <input 
                                 type="text"
                                 name="username"
                                 id="username"
-                                class="container_input_input"
+                                class="form-input"
+                                placeholder="Username"
                             />
                         </div>  
-                        <div class="container_input">
-                            <label class="container_caption" htmlFor="password">password</label>
+                        <div class="form-group">
                             <input 
                                 type="password"
                                 name="password"
                                 id="password"
-                                class="container_input_input"
+                                class="form-input"
+                                placeholder="Password"
                             />
                         </div>  
-                    <div class="form_submit">
+                    <div class="form-button" >
                         <button 
                             type="submit"
-                            class="submit_pagination"
-                            
-                        >Login</button>
+                            name="login"
+                            class="btn-submit"
+                        >LOGIN</button>
+                        <div class="btn-back">
+                        <a href="../../index.php">BATAL</a>
+                        </div>
                     </div>
-                    <div class="footer">
-                        Apakah sudah punya Akun? 
-                    <a class="footer_link" href='/auth/register'>Daftar</a>
+                    <div class="footer-form">
+                    <a class="footer-link" href='/auth/register'>Lupa password?</a>
                     </div>
                     </form>
                 </div>
                 </div>
-                <div class="container_content">
-                    <img class="content" src="../../main/img/LOGO.jpg" alt='logo'/>
-                </div>
             </div>
-        </main>
-
-
+ </main>
         <?php
-    if (isset($_POST['login'])) {
+        if (isset($_POST['login'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
     

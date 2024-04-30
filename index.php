@@ -11,7 +11,7 @@ $level = "pemohon";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="demo1/img/bekasi.png">
+    <link rel="icon" href="main/img/LOGO.jpg">
     <title>Pelayanan Surat Keterangan Online Kelurahan Jaticempaka</title>
     <!-- core CSS -->
     <link href="main/css/bootstrap.min.css" rel="stylesheet">
@@ -55,7 +55,6 @@ $level = "pemohon";
                         <li class="scroll active"><a href="#home">Beranda</a></li>
                         <li class="scroll"><a href="#features">Jadwal</a></li>
                         <li class="scroll"><a href="#services">Informasi</a></li>
-                        <li class="scroll"><a href="pegawai.php">Pegawai</a></li>
                         <li class="scroll"><a href="#get-in-touch">Lokasi</a></li>
                     </ul>
                 </div>
@@ -77,8 +76,8 @@ $level = "pemohon";
                     <div class="col-lg-12 text-center">
                         <div class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"">
                            <!-- Button trigger modal -->
-                           <a href=" login.php" type="submit" class="btn btn-primary">Login</a>
-                            <a href="register.php" type="submit" class="btn btn-primary">Daftar</a>
+                           <a href="/demo1/auth/login.php" type="submit" class="btn btn-primary">Login</a>
+                            <a href="/demo1/auth/register.php" type="submit" class="btn btn-primary">Daftar</a>
                         </div>
                     </div>
                 </div>
@@ -229,7 +228,7 @@ $level = "pemohon";
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; <?php echo date('Y'); ?> KELURAHAN JATICEMPAKA KECAMATAN PONDOKGEDE KABUPATEN BEKASI
+                    &copy; <?php echo date('Y'); ?> BINA LINDUNG JATICEMPAKA KECAMATAN PONDOKGEDE KABUPATEN BEKASI
                 </div>
                 <div class="col-sm-6">
                     <ul class="social-icons">

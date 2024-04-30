@@ -14,24 +14,24 @@
             <div class="sidebar_menu_list">
                 <h2>Admin Panel</h2>
                 <div class="sidebar_Link">
-                    <Link class="sidebar_icon" href=list.url>
+                    <a class="sidebar_icon_dashboard" href="#">
                         <h3 class="sidebar_title">Dashboard</h3>
-                    </Link>
+                    </a>
                 </div>
                 <div class="sidebar_Link">
-                    <Link class="sidebar_icon" href=list.url>
+                    <a class="sidebar_icon" href="#">
                         <h3 class="sidebar_title">Kelola Data</h3>
-                    </Link>
+                    </a>
                 </div>
                 <div class="sidebar_Link"`>
-                    <Link class="sidebar_icon" href=list.url>
+                    <a class="sidebar_icon" href="#">
                         <h3 class="sidebar_title">Transaksi</h3>
-                    </Link>
+                    </a>
                 </div>
                 <div class="sidebar_Link">
-                    <Link class="sidebar_icon" href=list.url>
+                    <a class="sidebar_icon" href="#">
                         <h3 class="sidebar_title">Profile</h3>
-                    </Link>
+                    </a>
                 </div>
             </div>
 

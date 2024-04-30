@@ -41,7 +41,7 @@
                     </div>
                     <div class="footer">
                         Apakah sudah punya Akun? 
-                    <a class="footer_link" href='/auth/register'>Daftar</a>
+                    <a class="footer_link" href='/demo1/auth/register.php'>Daftar</a>
                     </div>
                     </form>
                 </div>

@@ -4,6 +4,7 @@ body
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container{
@@ -176,7 +177,7 @@ body
         height: 80vh;
         display: grid;
         gap: 3px;
-        margin-left: 20px;
+        margin-left: 15px;
     }
 
     .sidebar_list 
@@ -185,25 +186,33 @@ body
     }
     .sidebar_icon
     {
+        width: 10vw;
+        height: 3vw;
         color: lightgrey;
-        
-        .sidebar_icon:hover{
-            color: white;
+
+        .sidebar_icon:hover
+        {
+            color: #45aed6;
         }
+    }
+    .sidebar_icon_dashboard
+    {
+        width: 10vw;
+        height: 3vw;
+        color: white;
+        background: #45aed6;
     }
     .sidebar_title
     {
         position: relative;
         bottom: 6px;
         display: flex;
-        width: 10em;
-        height: 55px;
+        width: 9em;
         align-items: center;
+        justify-content: center;
         color: lightgrey;
-        padding: 25px 10px 10px;
         font-size: 13px;
         font-weight: 600;
-
     }
 
     .sidebar_Link 
@@ -212,7 +221,6 @@ body
         width: 9em;
         display: flex;
         align-items: center;
-        cursor: pointer;
         justify-content: center;
         text-decoration: none;
         height: 3em;
@@ -220,7 +228,7 @@ body
         
         .sidebar_Link:hover 
         {
-            background-color: white;
+            background-color: brown;
             transition: 0.5s ease-in-out;
             border-radius: 15px;
         }
@@ -229,9 +237,10 @@ body
     .sidebar_menu_list 
     {
         display: flex;
-        width: 13vw;
+        width: 11vw;
         flex-direction: column;
-        padding: 5px;
+        /* padding: 5px; */
+        gap: 15px;
     }
     .sidebar_button_logout
     {

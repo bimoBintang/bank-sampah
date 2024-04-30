@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.admin_container 
+{
+    width: 100%;
+    display: flex;
+}
+.sidebar
+{
+    font-family: 'Poppins',sans-serif;
+    display: grid;
+    width: 13vw;
+    height: 100vh;
+    background-color: #123c4b;
+    gap: 8px;
+    
+    .sidebar_menu 
+    {
+        width: 13vw;
+        height: 80vh;
+        display: grid;
+        gap: 3px;
+        margin-left: 15px;
+    }
+
+    .sidebar_list 
+    {
+        height: 3em;
+    }
+    .sidebar_icon
+    {
+        width: 10vw;
+        height: 3vw;
+        color: lightgrey;
+
+        .sidebar_icon:hover
+        {
+            color: #45aed6;
+        }
+    }
+    .sidebar_icon_dashboard
+    {
+        width: 10vw;
+        height: 3vw;
+        color: white;
+        background: #45aed6;
+    }
+    .sidebar_title
+    {
+        position: relative;
+        bottom: 6px;
+        display: flex;
+        width: 9em;
+        align-items: center;
+        justify-content: center;
+        color: lightgrey;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .sidebar_Link 
+    {
+        content: "";
+        width: 9em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 3em;
+     
+        
+        .sidebar_Link:hover 
+        {
+            background-color: brown;
+            transition: 0.5s ease-in-out;
+            border-radius: 15px;
+        }
+    }
+
+    .sidebar_menu_list 
+    {
+        display: flex;
+        width: 11vw;
+        flex-direction: column;
+        /* padding: 5px; */
+        gap: 15px;
+    }
+    .sidebar_button_logout
+    {
+        position: relative;
+        top:10em;
+        width: 9em;
+        height: 30px;
+        border-radius: 10px;
+        background-color: rgb(233, 79, 79);
+       
+    }
+}
+
+.logo_admin
+{
+    width: 8rem;
+    position: relative;
+    top: 10rem;
+}
+
+/* Header */
+.header{
+    height: 40px;
+    width: 100%;
+    background-color: #123c4b;
+}
+
+/* Contact */
+.container_Contact
+{
+    width: 100%;
+    
+    
+    .container_content_main
+    {
+        height: 37.5em;
+    }
+
+    .container_content_spam
+    {
+        height: 20px;
+        border: 2px solid black;
+    }
+
+    .cotainer_main
+    {
+        display: flex;
+        height: 8em;
+        gap: 43em;
+    }
+    .container__main_
+    {
+        display: flex;
+        margin: 5px;
+        gap: 3em;
+    }
+
+    .container_input {
+        width: 25em;
+        height: 35px;
+        border-radius: 5px;
+        position: relative;
+    }
+    
+    .container_add
+    {
+        display: flex;
+        width: 50px;
+        height: 35px;
+        align-items: center;
+        border: 2px solid transparent;
+        text-align: center;
+        justify-content: center;
+        border-radius: 7px;
+        cursor: pointer;
+        background: #047857;
+    }
+    .container_add_
+    {
+        display: flex;
+        width: 90px;
+        height: 35px;
+        align-items: center;
+        border: 2px solid transparent;
+        text-align: center;
+        justify-content: center;
+        border-radius: 7px;
+        cursor: pointer;
+        gap: 3px;
+        background: #047857;
+    }
+
+    .container_text {
+        color: white;
+    }
+    .container_adds
+    {
+        display: flex;
+        width: 13em;
+        height: 30px;
+        align-items: center;
+        border: 1px solid grey;
+        text-align: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+  
+
+    .container_main_side
+    {
+        
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    
+}
+
+.wrapper_Contact
+{
+    height: 13rem;
+}
+
+.header_content
+{
+    background-color: #123c4b;
+    height: 40px;
+}
+
+.text{
+    display: flex;
+    position: relative;
+    left: 30px;
+    align-items: center;
+    width: 6em;
+}
+
+
+
+.ImageSearch {
+    height: 26px;
+    position: absolute;
+    top: 11.2em;
+    margin-left: 10px;
+    
+}
+
+.search {
+    height: 35px;
+    display: flex;
+}

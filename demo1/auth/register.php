@@ -48,7 +48,7 @@
                         <div class="announcement">
                             Anda sudah punya akun?
 
-                            <a class="announcement_Link_register" href="/auth/login" 
+                            <a class="announcement_Link_register" href="/demo1/auth/login.php" 
 
                             >sign In</a>  
 

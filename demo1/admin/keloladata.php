@@ -68,47 +68,61 @@
                     <div class="container_main_">
                         <SearchInput type="text" placeholder="Search" />
                         <span class="container_add_">
-                                <Image src={filterico alt="Fitur" width={20 height={50/> 
+                                <img src="" alt="Fitur" /> 
                                 <p class="container_text_">Fitur</p>
                         </span>
                     </div>
+                    <div class="content read">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>id</td>
+                                    <td>Nama</td>
+                                    <td>username</td>
+                                    <td>password</td>
+                                    <td>Email</td>
+                                    <td>Phone</td>
+                                    <td>Alamat</td>
+                                    <td>Rt</td>
+                                    <td>Role</td>
+                                    <td>Created</td>
+                                    <td>Action</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php foreach ($contacts as $contact): ?>
+                                <tr>
+                                    <td><?=$contact['id']?></td>
+                                    <td><?=$contact['nama']?></td>
+                                    <td><?=$contact['username']?></td>
+                                    <td><?=$contact['password']?></td>
+                                    <td><?=$contact['email']?></td>
+                                    <td><?=$contact['phone']?></td>
+                                    <td><?=$contact['alamat']?></td>
+                                    <td><?=$contact['rt']?></td>
+                                    <td><?=$contact['role']?></td>
+                                    <td><?=$contact['created']?></td>
+                                    <td class="actions">
+                                        <a href="update.php?id=<?=$contact['id']?>" class="edit"><i class="fas fa-pen fa-xs"></i></a>
+                                        <a href="delete.php?id=<?=$contact['id']?>" class="trash"><i class="fas fa-trash fa-xs"></i></a>
+                                    </td>
+                                </tr>
+                                <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <?php if ($page > 1): ?>
+                            <a href="read.php?page=<?=$page-1?>"><i class="fas fa-angle-double-left fa-sm"></i></a>
+                            <?php endif; ?>
+                            <?php if ($page*$records_per_page < $num_contacts): ?>
+                            <a href="read.php?page=<?=$page+1?>"><i class="fas fa-angle-double-right fa-sm"></i></a>
+                            <?php endif; ?>
+                        </div>
+                    </div>
                 </section>
-                
             </div>
         </div>
 
      <!-- Crud Keloladata  -->
-    <main class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            {children
-            <div cla    // Crud Keloladata //ss="text-sm text-black uppercase bg-gray-500 ">
-                <div class="flex it // Crud Keloladata //ems-center justify-center gap-[6rem]">
-                    <span>Nama Warga</span>
-                    <span>Phone</span>
-                    <span>Email</span>
-                    <span>Alamat</span>
-                    <span>Blok</span>
-                    <span>Rt</span>
-                    <span>Action</span>
-                </div>
-            </div>
-            
-            <div>
-                {data.map((content, index) => (
-                    <div key={index} class="d   // Crud Keloladata //ark:bg-gray-700 border-b flex flex-col">
-                        <div class="flex ga // Crud Keloladata //p-[1.5rem] py-3 px-6 items-center justify-center">
-                            <div class="py-3 px // Crud Keloladata //-[1.91rem]">{content.namaWarga}</div>
-                            <div class="py-3 px // Crud Keloladata //-[1.91rem]">{content.phone}</div>
-                            <div class="py-3 px // Crud Keloladata //-[1.91rem]">{content.email}</div>
-                            <div class="py-3 px // Crud Keloladata //-[1.91rem]">{content.alamat}</div>
-                            <div class="py-3 px // Crud Keloladata //-[1.91rem]">{content.blok}</div>
-                            <div class="py-3 px // Crud Keloladata //-[1.91rem]">{content.rt}</div>
-                            <div class="flex ga // Crud Keloladata //p-1 justify-end">
-                                <EditButton />
-                                <DeleteButton />
-                            </div> {/* Tambahkan konten Action sesuai kebutuhan */}
-                        </div>
-                    </div>
-                ))}
-            </div>
-        </main>
+    
 </main>

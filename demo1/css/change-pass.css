@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  height: 100%;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Fira code",sans-serif;
+}
+
+.authform{
+  background: white;
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.brand{
+  text-align: center;
+}
+
+.brand-logo{
+  width: 15rem;
+  padding: 20px;
+}
+
+.main-form{
+  background: #123C4B;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.title-form{
+  padding: 10px 40px 0px;
+  text-align: left;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px 15px;
+}
+
+.form-caption{
+  font-size: 14px;
+}
+
+.form-input{
+  width: 270px;
+  height: 46px;
+  padding: 10px 17px 10px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+
+input:focus{
+  border: 3px solid #A6CA3C;
+}
+
+.form-submit{
+  text-align: center;
+}
+
+.form-button{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 30px;
+}
+
+.form-button button{
+  width: 120px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  color: white;
+}
+
+.btn-submit{
+  background: #A6CA3C;
+}
+
+.btn-submit:hover{
+  background: #a7d815;
+  box-shadow: rgba(166, 202, 60, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.btn-back a{
+  display: block;
+  width: 110px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 2px;
+  font-weight: 600;
+  color: white;
+  background: rgb(204, 57, 57);
+}
+
+.btn-back:hover{
+  background: rgb(209, 22, 22);
+  box-shadow: rgba(204, 43, 31, 0.425) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+

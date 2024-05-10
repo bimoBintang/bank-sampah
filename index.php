@@ -1,7 +1,7 @@
 <?php
-session_start();
-include 'konek.php';
-$level = "pemohon";
+// session_start();
+// include 'konek.php';
+// $level = "pemohon";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,8 +55,7 @@ $level = "pemohon";
                     <ul class="nav navbar-nav">
                         <li class="scroll active"><a href="#home">Beranda</a></li>
                         <li class="scroll"><a href="#features">Jadwal</a></li>
-                        <li class="scroll"><a href="#services">Informasi</a></li>
-                        <li class="scroll"><a href="pegawai.php">Pegawai</a></li>
+                        <li class="scroll"><a href="#services">Prosedur</a></li>
                         <li class="scroll"><a href="#get-in-touch">Lokasi</a></li>
                     </ul>
                 </div>
@@ -77,7 +76,7 @@ $level = "pemohon";
                     <div class="col-lg-12 text-center">
                         <div class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms"">
                            <!-- Button trigger modal -->
-                           <a href=" login.php" type="submit" class="btn btn-primary">Login</a>
+                           <a href="./demo1/auth/login.php" type="submit" class="btn btn-primary">Login</a>
                         </div>
                     </div>
                 </div>
@@ -88,7 +87,7 @@ $level = "pemohon";
     <section id="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Waktu Pelayanan</h2>
+                <h2 class="section-title text-center wow fadeInDown">Jadwal</h2>
             </div>
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
@@ -134,7 +133,7 @@ $level = "pemohon";
         <div class="container">
 
             <div class="section-header">
-                <h2 class="section-title text-center wow fadeInDown">Prosedur Permohonan Surat</h2>
+                <h2 class="section-title text-center wow fadeInDown">Prosedur Tukar Sampah</h2>
             </div>
 
             <div class="row">
@@ -146,7 +145,7 @@ $level = "pemohon";
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Login</h4>
-                                <p>Pemohon Surat melakukan login, melalui halaman Login.
+                                <p>Warga melakukan login, melalui halaman Login.
                                 </p>
                             </div>
                         </div>
@@ -160,7 +159,7 @@ $level = "pemohon";
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">Menginput Data</h4>
-                                <p>Input data pemohon dengan sebelumnya melakukan Login dengan username dan password.
+                                <p>Input data warga dengan sebelumnya melakukan Login dengan nomor kartu keluarga sebagai username dan password.
                                 </p>
                             </div>
                         </div>
@@ -173,10 +172,8 @@ $level = "pemohon";
                                 <img src="main/img/number3.png" alt="">
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Mengajukan Surat Permohonan</h4>
-                                <p>Setelah input data pemohon dengan lengkap dan benar, Pemohon memilih Surat yang mau
-                                    direquest serta melengkapi data request, Kemudian Dikirim dan Menunggu persetujuan
-                                    dari Lurah.</p>
+                                <h4 class="media-heading">Menjual Sampah Anorganik</h4>
+                                <p>Setelah memasukkan data warga dengan lengkap, warga dapat memilih antara penjemputan sampah atau langsung menyerahkan ke lokasi TPS3R. Jika memilih penjemputan, petugas akan datang mengambil sampah. Jika memilih langsung, warga diharapkan menyerahkan sampah ke TPS3R.</p>
                             </div>
                         </div>
                     </div>
@@ -188,10 +185,10 @@ $level = "pemohon";
                                 <img src="main/img/number4.png" alt="">
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">Permohonan Disetujui</h4>
-                                <p>Permohonan di setujui oleh lurah, kemudian staf akan mencetak surat sesuai request
-                                    surat yang diajukan, pemohon mengambil surat yang sudah dicetak dan bertandatangan
-                                    di Kantor Kelurahan Jaticempaka.</p>
+                                <h4 class="media-heading">Transaksi Sampah</h4>
+                                <p>
+                                Setelah sampah diterima, admin akan memproses dan mentransfer hasil penjualan sampah warga sebagai saldo aplikasi. Untuk pencairan, warga cukup menekan tombol "Tarik Saldo" dan diarahkan untuk berkomunikasi dengan admin melalui WhatsApp.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -217,31 +214,12 @@ $level = "pemohon";
         <div>
             <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.954122471942!2d106.90228917409699!3d-6.2697640613760806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f32fe1c4e9a9%3A0x55369ccb92e54af6!2sTPS3R%20KPP%20BINA%20LINDUNG!5e0!3m2!1sid!2sid!4v1713857388010!5m2!1sid!2sid" 
-                width="1350" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
         
     </section>
     <!--/#bottom-->
-
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; <?php echo date('Y'); ?> KELURAHAN JATICEMPAKA KECAMATAN PONDOKGEDE KABUPATEN BEKASI
-                </div>
-                <div class="col-sm-6">
-                    <ul class="social-icons">
-                        <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--/#footer-->
 
     <script src="main/js/jquery.js"></script>
     <script src="main/js/bootstrap.min.js"></script>

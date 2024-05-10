@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+* {
+  margin: 0;
+  font-family: 'Fira Code', monospace;
+}
+
+.y-hidden { overflow-y: hidden; }
+
+.gradient { 
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-card {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.container-card h1{
+  font-size: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 10px;
+  margin: auto;
+  width: 350px;
+  height: 160px;
+  background-color: #5cb41e;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: .3s;
+  box-shadow: 0 1px 18px #5cb41e;
+}
+
+.card:nth-child(1) {
+  background-color: #007bff;
+  box-shadow: 0 1px 18px #007bff;
+}
+
+.card:nth-child(1) img {
+  width: 60px;
+}
+.card:nth-child(2) {
+  background-color: #ff0000;
+  box-shadow: 0 1px 18px #ff0000;
+}
+
+.card:nth-child(3) {
+  background-color: #ff9900;
+  box-shadow: 0 1px 18px #ff9900;
+}
+
+.card:nth-child(1):hover, .card:nth-child(2):hover, .card:nth-child(3):hover, .card:nth-child(4):hover {
+  transform: scale(0.95);
+  opacity: 0.95;
+}
+
+header.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  width: 100%;
+  background-color: #123C4B;
+  color: white;
+  padding: 1% 0% 1%;
+}
+
+#toggleSidebarButton{
+  background: none;
+  outline: none;
+  border: none;
+  padding-left: 15%;
+}
+
+.header h4{
+  padding-right: 10%;
+}
+
+.container {
+  display: flex;
+}
+
+/* SideBar */
+
+.sidebar {
+  position: fixed;
+  position: fixed;
+  top: 0;
+  left: -250px;
+  height: 100%;
+  transition: all 0.3s ease;
+  background: linear-gradient(to bottom, #f5f5fa, #fff);
+}
+
+.content {
+  margin: 80px 80px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.content h4 {
+  transition: 300ms;
+  font-size: 1.1rem;
+  padding: 1px;
+  width: fit-content;
+}
+
+.content h4:hover {
+  color: #1e6079;
+  transform: translateX(10px);
+}
+
+.content a {
+  text-decoration: none;
+  color: #232323;
+  width: fit-content;
+}
+
+.data {cursor: pointer;}
+
+.hidden {display: none;}
+
+.bx-chevron-down {
+  font-size: 1.3rem;
+  transition: 300ms ease-in-out;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content li span {
+  color: #123C4B;
+}
+
+.content li {
+  margin-left: 1rem;
+  width: fit-content;
+  margin-bottom: 0.8rem;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.content li:hover {
+  transform: translateX(10px);
+}
+
+.content li a {
+  color: rgb(73, 73, 73);
+}
+
+.content li a::before {
+  color: #1e6079;
+  content: "# ";
+  font-weight: 600;
+}
+
+/* Akhir Sidebar */
+
+main {
+  margin-left: 17rem;
+  margin-top: 2.7rem;
+  width: 940px;
+}
+
+.kotak-atas {
+  position: fixed;
+  width: 100%;
+}
+
+main .wrapper {
+  margin-top: 10rem;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.wrapper table {
+  width: 100%;
+  font-size: 12px;
+  border-collapse: collapse;
+}
+
+.text {
+  margin: 2rem 1rem 1rem;
+  text-align: left;
+}
+
+.kotak2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.kotak2 .btn {
+  border: 1px solid #123C4B;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.kotak2 .btn-a{
+  font-weight: 600;
+  display: block;
+  background-color: #fff;
+  padding: 5px 8px;
+  border: 1px solid #123C4B;
+  text-decoration: none;
+  color: #123C4B;
+  transition: all 0.2s ease-in-out;
+}
+
+.kotak2 .btn:hover .btn-a { transform: translate(-5px, -5px); }
+
+.kotak-search{
+  padding-right: 29%;
+}
+
+.kotak-search input{
+  height: 1.4rem;
+  margin-right: 5px;
+  outline: none;
+  border: none;
+  border-bottom:1px solid rgb(200, 200, 200) ;
+  background: none;
+}
+
+.kotak-search input:focus {
+  border: none;
+  border-bottom: 1.5px solid #123C4B;
+  border-radius: 3px;
+}
+
+.kotak-search .cari {
+  background: none;
+  border: 1.4px solid #123C4B;
+  color: white;
+  background-color: #123C4B;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-weight: bold;
+  transition: 200ms;
+}
+
+.kotak-search .cari:hover {
+  background: transparent;
+  color: #123C4B;
+}
+
+.wrapper table {
+  background-color: white;
+}
+
+.wrapper table th {
+  background-color: #e2e8f0;
+}
+
+.wrapper table tr:nth-child(odd) {
+  background-color: #eef2ff;
+}
+
+.wrapper table tr:hover {
+  background-color: aliceblue;
+  /* color: white; */
+}
+
+.wrapper td a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+td .ubah {
+  color: green;
+}
+
+td .hapus {
+  color: red;
+}
+
+.w-table {
+ width: 100%;
+ margin-top: 2rem;
+}
+
+table td {
+  text-align: center;
+}
+
+.aksi {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/*Form Input*/
+.title-input-data{
+  text-align: left;
+  margin: 10px;
+  padding-top: 20px;
+  color:  #123C4B;
+}
+
+.title-edit-data{
+  text-align: left;
+  margin: 10px;
+  padding-top: 20px;
+  color:  green;
+}
+
+.form-input{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  max-width: 800px;
+  gap: 30px;
+  height: auto; 
+  margin: 0 auto;
+}
+
+.left-coloumn,
+.right-coloumn {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  margin-bottom: 5px;
+}
+
+.caption-form{
+  margin: 10px 0px 10px;
+}
+
+.input-edit{
+  background: white;
+  color: #666;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.btn-input{
+  margin-top: 20px;
+}
+
+.btn-create, .btn-update{
+  width: 200px;
+  padding: 10px 0px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  border-radius: 5px;
+  margin: 0% 1% 2%;
+  border: none;
+  outline: none;
+}
+
+.btn-create{
+  background-color: #123C4B;
+}
+
+.btn-create:hover {
+  background-color: #1f5569;
+}
+
+.btn-update{
+  background-color: green;
+}
+
+.btn-update:hover{
+  background-color: rgb(6, 209, 6);
+}
+
+form {
+  max-width: 800px;
+}
+/*akhir input*/
+
+/* Add this CSS to your existing styles to make the website responsive */
+
+/* Adjustments for smaller screens */
+/* @media only screen and (max-width: 768px) {
+  header.header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7rem 1rem;
+  }
+
+  header.header a {
+    margin-right: 1rem;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-top: 3.5rem;
+    padding: 1rem;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 3.5rem;
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  main .wrapper {
+    margin-top: 5rem;
+    padding: 0.5rem;
+  }
+
+  .kotak-atas {
+    width: 100%;
+  }
+
+  main .wrapper table {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .w-table {
+    width: 100%;
+  }
+
+  .kotak2 {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .kotak-search {
+    margin-top: 0.5rem;
+  }
+
+  .kotak-search input {
+    width: 100%;
+  }
+}
+ */

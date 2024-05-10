@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', sans-serif;
+    background: white;
+    overflow-x: hidden;
+}
+
+.header{
+    height: 80px;
+    position: fixed;
+    align-items: center;
+    background: #123C4B;
+    display: flex;
+    color: white;
+    z-index: 5;
+    width: 100%;
+    margin-top: -60px;
+}
+
+.icon-back{
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.header-logo{
+    width: 30px;
+    margin-right: 10px;
+    padding-left: 40px;
+    z-index: 0;
+    transition: transform 1s ease;
+}
+
+.header-logo:hover{
+    transform: translateX(-20px);
+}
+
+.header h1{
+    margin: 0; 
+    flex: 1; 
+    text-align: center;
+    margin-left: -50px;
+}
+
+.menu-edit {
+    padding: 40px;
+    width: 100%;
+    margin-top: 60px;
+    background: #f8f9fa;
+    color: #123C4B;
+}
+
+.form-profile-disabled {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    max-width: 800px;
+    gap: 30px;
+    height: auto; 
+    margin: 0 auto;
+}
+
+.left-coloumn,
+.right-coloumn {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.caption {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px; 
+}
+
+textarea {
+    margin-bottom: 5px;
+}
+.input-edit{
+    background: white;
+    color: #666;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn input{
+    background-color: #1c6ec6;
+    width: 200px;
+    padding: 10px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+    margin: 0% 0% 2%;
+    border: none;
+    outline: none;
+}
+
+.btn input:hover {
+    background-color: #007bff;
+}
+
+
+form {
+    margin: 0 auto 20px auto;
+    max-width: 800px;
+}
+
+.input-new-pass {
+    width: 100%;
+    padding: 10px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+}
+
+.btn-new-pass {
+    background: #15d61c;
+    display: block;
+    width: 200px;
+    padding: 10px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}
+
+.btn-new-pass:hover{
+    background-color: #39ff27;
+}
+
+/* Media queries untuk tata letak responsif */
+@media only screen and (max-width: 768px) {
+    .header h1{
+        font-size: 25px;
+    }
+    .form-profile-disabled {
+        flex-direction: column;
+        margin-top: -20px;
+        row-gap: 0px; /* Mengubah tata letak menjadi kolom pada layar kecil */
+    }
+
+    .left-coloumn,
+    .right-coloumn {
+        width: 100%; /* Mengubah lebar menjadi 100% agar mengisi lebar layar pada layar kecil */
+    }
+
+    .menu-edit{
+        margin-left: -30px;
+    }
+
+    .btn{
+        margin-left: 10px;
+    }
+
+    .form-new-pass{
+        margin-left: 10px;
+    }
+}

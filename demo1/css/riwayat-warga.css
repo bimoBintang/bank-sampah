@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Fira code', sans-serif;
+  background: #f8f9fa;
+}
+
+.header {
+  height: 80px;
+  align-items: center;
+  background: #123C4B;
+  display: flex;
+  color: white;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  margin-top: -80px;
+}
+
+.icon-back {
+  width: auto;
+  height: auto;
+  z-index: 1;
+}
+
+.header-logo {
+  width: 30px;
+  margin-right: 10px;
+  padding-left: 40px;
+  z-index: 0;
+  transition: transform 1s ease;
+}
+
+.header-logo:hover {
+  transform: translateX(-20px);
+}
+
+.header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  margin-left: -50px;
+}
+
+.history-table {
+  margin-top: 80px;
+  width: 100%;  
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.history-table th {
+  background-color: #f2f2f2;
+}
+
+.history-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Button Styles */
+td a{
+  text-decoration: none;
+}
+
+.edit-btn{
+  display: block;
+  text-align: center;
+  width: 80px;
+  border: none;
+  padding: 6px 12px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.edit-btn:hover{
+  background-color: #0056b3;
+}
+
+/* Responsive Table */
+@media only screen and (max-width: 768px) {
+  .history-table {
+      overflow-x: auto;
+  }
+
+  .history-table th,
+  .history-table td {
+      white-space: nowrap;
+  }
+
+  .history-table th:first-child,
+  .history-table td:first-child {
+      position: sticky;
+      left: 0;
+      background-color: #f2f2f2;
+  }
+
+  .history-table th {
+      z-index: 1;
+  }
+
+  .history-table th:first-child {
+      z-index: 2;
+  }
+}
+
+.field-btn{
+  display: flex;
+  gap: 10px;
+}
+
+.btn-konfirmasi, .btn-tolak{
+  width: 80px;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+}
+
+.btn-konfirmasi{
+  background-color: #007bff;
+}
+
+.btn-tolak{
+  background-color: rgb(236, 17, 17);
+}

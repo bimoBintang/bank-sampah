@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code',sans-serif;
+    background: #123C4B;
+}
+
+.container
+{
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 180px;
+  background: white;
+  color: #123C4B;
+  padding: 0 10% 2%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.header p{
+  margin-top: -15px;
+}
+
+.logout {
+  margin: 20px 0px 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #8C3333;
+  color: white;
+}
+.menu-nav{
+  margin: 5% 10% 5%;
+  color: white;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  text-align: center;
+}
+
+.card-menu{
+  background-color: white;
+  color: #123C4B;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px
+}
+
+.icon-card{
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.icon-card-img{
+  width: 90px;
+  padding: 10px 50px 0px 15px;
+}
+.icon-card-img_{
+  position: relative;
+  top: 17px;
+  left: 5px;
+  width: 90px;
+  padding: 10px 50px 0px 15px;
+}
+
+#one{
+  background-color: #007bff;
+}
+
+#two{
+  background-color: #ff0000;
+}
+
+#three{
+  background-color: #ffdd00;
+}
+
+.ilustration img{
+  width: 150px;
+  margin-right: 40px;
+}
+
+.content{
+  display: flex;
+  height:100%;
+  background-color: white;
+  align-items: center;
+  padding: 2% 10% 1%;
+  color: #123C4B;
+}
+
+
+
+.image-content img{
+  width: 500px;
+}
+
+    /* Penyesuaian untuk Responsivitas */
+    @media only screen and (max-width: 768px) {
+      .header {
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 10px;
+          height: auto;
+      }
+
+      .menu-nav {
+          margin: 20px 0;
+      }
+
+      .card-group {
+        display: flex;
+        margin: 1.5rem;
+          /* flex-wrap: wrap;
+          flex-direction: column; */
+          justify-content: center;
+          gap: 10px;
+      }
+
+      .card-menu p{
+          position: relative;  
+          width: 45%;
+          height: 9rem;
+          max-width: 200px;
+          bottom: 2.9rem;
+          left: 1.3rem;
+          text-align: center;
+      }
+
+      .card-menu{
+        background-color: white;
+        color: #123C4B;
+        width: 110px;
+        height: 143px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px
+      }
+
+      .icon-card {
+          content: "";
+          display: flex;
+          width: 90px;
+          height: 80px;
+          margin: 40px auto;
+      }
+      
+      .icon-card img{
+        width: 60px;
+        height: 60px;
+      }
+      .teks
+      {
+        padding-left: 6px;
+      }
+      
+      #one
+      {
+        position: relative;
+        bottom: 1.2rem;
+      }
+      #two
+      {
+        position: relative;
+        bottom: 1.2rem;
+      }
+      #three
+      {
+        position: relative;
+        bottom: 1.2rem;
+      }
+      
+      .ilustration img {
+          width: 100px;
+          margin: 0;
+      }
+
+      .content {
+          flex-direction: column;
+          align-items: center;
+          padding: 20px 10px;
+      }
+
+      .image-content img {
+          width: 100%;
+          height: auto;
+      }
+
+      .icon-card-img
+      {
+        margin-bottom: 2rem;
+      }
+
+      .text
+      {
+        margin-left: 1rem;
+      }
+  }

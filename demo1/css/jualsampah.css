@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code',sans-serif;
+    background: #f8f9fa;
+}
+
+.header{
+    height: 80px;
+    align-items: center;
+    background: #123C4B;
+    display: flex;
+    color: white;
+}
+
+.icon-back{
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.header-logo{
+    width: 30px;
+    margin-right: 10px;
+    padding-left: 40px;
+    z-index: 0;
+    transition: transform 1s ease;
+}
+
+.header-logo:hover{
+    transform: translateX(-20px);
+}
+
+.header h1{
+    margin: 0; 
+    flex: 1; 
+    text-align: center;
+    margin-left: -50px;
+}
+
+.card-form{
+    display: flex;
+    margin:50px auto;
+    width: 320px;
+    height: 510px;
+    background: #123C4B;
+    border-radius: 5px;
+    color: white;
+}
+
+.card-form h3{
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+.main-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.caption-input{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.input-datetime{
+    margin-top: -10px;
+    width: 250px;
+    height: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-option{
+    margin: -10px 0px 10px;
+    width: 270px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-note{
+    margin-top: -10px;
+    width: 250px;
+    height: 100px;
+    resize: none;
+    text-align: left;
+    padding: 10px;
+    border-radius: 3px;
+    outline: none ;
+}
+
+.btn-form{
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn-submit{
+    width: 120px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+    background: #a6ca3c;
+}
+
+.btn-back{
+    display: block;
+    text-align: center;
+    width: 110px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+    background: rgb(204, 57, 57);
+}
+
+@media only screen and (max-width: 768px) {
+    .header h1{
+        font-size: 25px;
+    }
+}

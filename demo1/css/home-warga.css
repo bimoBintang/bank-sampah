@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code',sans-serif;
+}
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 80px;
+    z-index: 5;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.brand{
+    display: flex;
+}
+
+.brand-logo{
+    width: 100px;
+    margin:10px 0px 0px 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    margin: auto 40px 0px 0px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -50px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+
+.wrapper{
+    background: #123C4B;
+    z-index: 1;
+    height: 280px;
+}
+
+.earning{
+    color: white;
+    margin: 20px;
+}
+
+.earning h1{
+    padding-top: 80px;
+    font-size: 20px;
+}
+
+.card-total-earning{
+    display: flex;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.card-total-earning .rupiah{
+    font-size: 18px;
+}
+
+.card-total-earning .total-earning{
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tarik-saldo{
+    display: block;
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+}
+
+
+.card-nav{
+    display: flex;
+    justify-content: center; 
+    margin: 0 auto;
+    gap: 20px; 
+    width: 600px;
+    height: 200px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+}
+
+.card-menu{
+    margin: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #123C4B;
+}
+
+.card-icon{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+#one{
+    background-color: #007bff;
+  }
+  
+  #two{
+    background-color: #ff0000;
+  }
+  
+  #three{
+    background-color: #ff9900;
+  }
+  
+
+.image-icon-card{
+    padding: 20px;
+    width:60px;
+}
+
+.main-container{
+    border-radius: 20%;
+    z-index: 2;
+}
+
+.card-content{
+    display: flex;
+    justify-content: space-between;
+    color: #123C4B;
+    margin: 60px 0px 20px;
+    padding: 20px;
+}
+
+.title-card{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.descript-card{
+    font-size: 25px;
+    padding-top: 0px;
+}
+
+.ilustration-card{
+    margin-bottom: 50px;
+}
+
+.ilustration-card img{
+    margin-top: 10px;
+    width: 500px;
+}
+
+@media screen and (max-width:769px){
+    .wrapper{
+        height: 230px;
+    }
+    .header{
+        margin-top: -25px;
+    }
+    .card-nav{
+        width: 300px;
+        height: 120px;
+        gap: 0px;
+    }
+    
+    .card-menu{
+        margin: 20px;
+        font-size: 12px;
+    }
+    
+    .card-icon{
+        width: 60px;
+        height: 60px;
+        gap: 0px;
+    }
+    
+    .image-icon-card{
+        padding: 10px;
+        width:40px;
+    }
+
+    .card-content{
+        flex-direction: column;
+    }
+
+    .title-card{
+        font-size: 18px;
+    }
+
+    .descript-card{
+        font-size: 20px;
+    }
+
+    .ilustration-card img{
+        width: 400px;
+    }
+}

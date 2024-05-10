@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code',sans-serif;
+    background: #f8f9fa;
+}
+
+.header{
+    position: fixed;
+    height: 80px;
+    align-items: center;
+    background: #123C4B;
+    display: flex;
+    color: white;
+    z-index: 5;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.icon-back{
+    width: auto;
+    height: auto;
+    z-index: 1;
+}
+
+.header-logo{
+    width: 30px;
+    margin-right: 10px;
+    padding-left: 40px;
+    z-index: 0;
+    transition: transform 1s ease;
+}
+
+.header-logo:hover{
+    transform: translateX(-20px);
+}
+
+.header h1{
+    margin: 0; 
+    flex: 1; 
+    text-align: center;
+    margin-left: -50px;
+}
+
+.card-menu{
+    margin: 100px 20px 10px;
+    z-index: 1;
+}
+
+.description-menu{
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.card-menu ul{
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.card-menu li{
+    padding-top: 5px;
+}
+
+
+
+
+
